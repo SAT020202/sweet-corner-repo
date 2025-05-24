@@ -1,0 +1,138 @@
+/* Navbar container */
+.navbar {
+    width: 100%;              /* Ajoutez cette ligne */
+    box-sizing: border-box;   /* Ajoutez cette ligne pour inclure le padding dans la largeur */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    font-family: Arial, sans-serif;
+    margin: 0;                /* Ajoutez cette ligne pour supprimer toute marge */
+}
+.navbar-logo {
+    display: flex;
+    align-items: center; /* Aligne verticalement le logo et le texte */
+    gap: 10px; /* Ajoute un espacement entre le logo et le texte */
+}
+
+.btn-login, .btn-logout {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #ffb347;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-left: 10px;
+}
+
+.btn-login:hover, .btn-logout:hover {
+    background: #ff9800;
+}
+
+.btn-logout {
+    background: #bbbaba;
+}
+
+.btn-logout:hover {
+    background: #646464;
+}
+/* Logo */
+.navbar-logo img {
+    height: 50px;
+     width: auto;
+}
+.navbar-logo h2 {
+    font-size: 1.5rem; /* Ajustez la taille du texte */
+    color: #720505cc; /* Couleur du texte */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Navbar links */
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Pour s'assurer que le lien n'est jamais souligné */
+.navbar a, .navbar-logo a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ff0000;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px 20px;
+}
+
+.dropdown-menu li a {
+    color: #000;
+    font-weight: normal;
+}
+
+.dropdown-menu li a:hover {
+    color: #ff0000;
+}
+
+/* Navbar icons */
+.navbar-icons a {
+    margin-left: 15px;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-icons a:hover {
+    color: #ff0000;
+}
+
+

@@ -1,0 +1,29 @@
+/* Titre principal */
+
+
+/* Formulaire */
+form {
+  margin-bottom: 30px;
+}
+
+.input-group {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* Tableau */
+.table {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.table td {
+  vertical-align: middle;
+}
+
+.text-muted {
+  font-style: italic;
+  color: #888;
+}

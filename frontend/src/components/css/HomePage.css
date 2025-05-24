@@ -1,0 +1,180 @@
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content section {
+    margin-bottom: 30px;
+}
+/* Style pour le titre h2 de bienvenue */
+/* Style pour le titre h2 de bienvenue */
+.content h2 {
+    font-size: 2.8rem;
+    color: #222; /* gris très foncé, presque noir */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    text-align: center;
+    font-weight: bold;
+    background: none;
+}
+
+/* Style pour le paragraphe de bienvenue */
+.content p {
+    font-size: 1.35rem;
+    color: #444;
+    margin-bottom: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 0.5px;
+    background: none;
+}
+/* Conteneur des cartes */
+.cards-container {
+    display: flex;
+    justify-content: space-between; /* Espace entre les cartes */
+    gap: 20px; /* Espacement entre les cartes */
+    padding: 20px;
+}
+
+
+/* Titres des cartes */
+.card h2 {
+    font-size: 1.5rem;
+    color: #351128; /* Couleur du titre */
+    margin-bottom: 10px;
+}
+
+/* Texte des cartes */
+.card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.categorie-section {
+    width: 80%;
+    margin: 0 auto 32px auto;
+    text-align: center;
+}
+
+.produits-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 24px; /* plus d'espace entre les cartes */
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1112px;
+    margin: 0 auto;
+    scrollbar-width: none; /* pour Firefox */
+    scrollbar-color: #dcabef #eee;
+}
+
+/* Scrollbar stylée pour Chrome */
+.produits-carousel::-webkit-scrollbar {
+    height: 10px;
+}
+.produits-carousel::-webkit-scrollbar-thumb {
+    background: #dcabef;
+    border-radius: 8px;
+}
+.produits-carousel::-webkit-scrollbar-track {
+    background: #eee;
+    border-radius: 8px;
+}
+
+.produit-card {
+    flex: 0 0 260px; /* largeur plus grande */
+    width: 260px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #0002;
+    padding: 18px 12px;
+    text-align: center;
+    scroll-snap-align: start;
+    transition: transform 0.2s;
+    cursor: pointer;
+
+}
+.produit-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 20px #ffb34744;
+}
+
+.produit-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* Ajoute ce style pour le badge du nombre de produits */
+.nombre-produits-badge {
+    display: inline-block;
+    background: #a259c6;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 10px;
+    vertical-align: middle;
+    box-shadow: 0 2px 8px #a259c633;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 900px) {
+    .produits-carousel {
+        gap: 1rem;
+    }
+    .produit-card {
+        min-width: 44vw;
+        max-width: 48vw;
+        padding: 1rem 0.7rem 1.2rem 0.7rem;
+    }
+    .produit-card img {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 600px) {
+    .produits-carousel {
+        flex-direction: column;
+        gap: 0.7rem;
+        align-items: center;
+    }
+    .produit-card {
+        min-width: 80vw;
+        max-width: 90vw;
+        padding: 0.8rem 0.5rem 1rem 0.5rem;
+    }
+    .produit-card img {
+        width: 60px;
+        height: 60px;
+    }
+    .categorie-section h3 {
+        font-size: 1.15rem;
+    }
+}

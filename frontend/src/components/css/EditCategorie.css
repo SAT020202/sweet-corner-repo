@@ -1,0 +1,38 @@
+/* Formulaire de modification */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  display: block; /* Transforme le bouton en bloc */
+  margin: 100px auto; /* Centre le bouton horizontalement */
+  width: auto; /* Ajuste la largeur automatiquement */
+  padding: 10px 20px; /* Ajoute un peu de padding */
+  text-align: center;
+}
+
